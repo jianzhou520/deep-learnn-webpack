@@ -63,8 +63,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./node_modules/css-loader/index.js!./style.css", function() {
-				var newContent = require("!!./node_modules/css-loader/index.js!./style.css");
+			module.hot.accept("!!./node_modules/css-loader/index.js!./test.css", function() {
+				var newContent = require("!!./node_modules/css-loader/index.js!./test.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -82,7 +82,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\r\n  background: green;\r\n}", ""]);
+	exports.push([module.id, "body {\r\n  background: green;\r\n  color: white;\r\n}", ""]);
 
 	// exports
 

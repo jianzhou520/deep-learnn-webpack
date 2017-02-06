@@ -1,2 +1,2 @@
-require('!style!css!./style.css');
+require('./test.css');
 document.write(require('./content'));
