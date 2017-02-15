@@ -1,0 +1,30 @@
+{
+  "name": "deep-learnn-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "bin": {
+    "deep-learnn-webpack": "bundle.js"
+  },
+  "dependencies": {
+    "css-loader": "^0.26.1",
+    "style-loader": "^0.13.1"
+  },
+  "devDependencies": {
+    "less": "^2.7.2",
+    "less-loader": "^2.2.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jianzhou520/deep-learnn-webpack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jianzhou520/deep-learnn-webpack/issues"
+  },
+  "homepage": "https://github.com/jianzhou520/deep-learnn-webpack#readme"
+}

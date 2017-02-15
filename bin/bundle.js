@@ -46,6 +46,7 @@
 
 	__webpack_require__(1);
 	document.write(__webpack_require__(5));
+	var write = __webpack_require__(6);
 
 /***/ },
 /* 1 */
@@ -63,8 +64,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./node_modules/css-loader/index.js!./test.css", function() {
-				var newContent = require("!!./node_modules/css-loader/index.js!./test.css");
+			module.hot.accept("!!./../node_modules/css-loader/index.js!./../node_modules/less-loader/index.js!./test.less", function() {
+				var newContent = require("!!./../node_modules/css-loader/index.js!./../node_modules/less-loader/index.js!./test.less");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -82,7 +83,7 @@
 
 
 	// module
-	exports.push([module.id, "body {\r\n  background: green;\r\n  color: white;\r\n}", ""]);
+	exports.push([module.id, "body {\n  background: red;\n  color: white;\n}\n", ""]);
 
 	// exports
 
@@ -401,6 +402,18 @@
 
 	module.exports = 'hello webpack';
 
+
+/***/ },
+/* 6 */
+/***/ function(module, exports) {
+
+	var test = () => {
+	  document.write('test content');
+	};
+
+	module.exports = {
+	  test
+	};
 
 /***/ }
 /******/ ]);

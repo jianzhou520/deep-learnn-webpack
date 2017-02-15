@@ -1,12 +1,14 @@
+const buildPath = __dirname + "/bin"
+
 module.exports = {
-  entry: "./entry.js",
+  entry: "./src/entry.js",
   output: {
-    path: __dirname,
+    path: buildPath,
     filename: "bundle.js"
   },
   module: {
     loaders: [
-      {test: /\.css$/, loader: "style!css"}
+      {test: /\.less$/, loader: "style!css!less-loader"}
     ]
   }
 };
